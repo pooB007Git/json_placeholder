@@ -1,18 +1,5 @@
 import fetch from 'node-fetch';
-import converter from "json-2-csv";
 import fs from "fs";
-import flatten from "flat";
- 
-
-// async function parseJSONFile (fileName) {
-//     try {
-//         const file = await readFile(fileName);
-//         return JSON.parse(file);
-//       } catch (err) {
-//         console.log(err);
-//         process.exit(1);
-//       }
-// }
 
 function arrayToCSV (data) {
     const csv = data.map(row => Object.values(row));
