@@ -11,7 +11,7 @@ function arrayToCSV (data) {
 
 async function writeCSV (fileName, data) {
     try {
-        fs.writeFileSync(fileName, data); 
+        fs.appendFileSync(fileName, data); 
     } catch (err) {
       console.log(err);
       process.exit(1);
